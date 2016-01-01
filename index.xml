@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog</title>
-    <link>http://replace-this-with-your-hugo-site.com/</link>
+    <link>/</link>
     <description>Recent content on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>maartenvanvliet@gmail.com (Maarten van Vliet)</managingEditor>
     <webMaster>maartenvanvliet@gmail.com (Maarten van Vliet)</webMaster>
     <lastBuildDate>Tue, 29 Dec 2015 21:57:00 +0100</lastBuildDate>
-    <atom:link href="http://replace-this-with-your-hugo-site.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>about</title>
-      <link>http://replace-this-with-your-hugo-site.com/about/</link>
+      <link>/about/</link>
       <pubDate>Tue, 29 Dec 2015 21:57:00 +0100</pubDate>
       <author>maartenvanvliet@gmail.com (Maarten van Vliet)</author>
-      <guid>http://replace-this-with-your-hugo-site.com/about/</guid>
+      <guid>/about/</guid>
       <description>
 
 &lt;h2 id=&#34;a-headline:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;A headline&lt;/h2&gt;
