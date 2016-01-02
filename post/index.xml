@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog</title>
-    <link>/</link>
-    <description>Recent content on Blog</description>
+    <title>Posts on Blog</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>maartenvanvliet@gmail.com (Maarten van Vliet)</managingEditor>
     <webMaster>maartenvanvliet@gmail.com (Maarten van Vliet)</webMaster>
     <lastBuildDate>Sat, 02 Jan 2016 16:11:43 +0100</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Books read in 2015</title>
@@ -38,22 +38,6 @@
 &lt;li&gt;&lt;a href=&#34;http://amzn.to/1RWIusY&#34;&gt;The Forever War&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://amzn.to/1O1hMtc&#34;&gt;The Martian&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>about</title>
-      <link>/about/</link>
-      <pubDate>Tue, 29 Dec 2015 21:57:00 +0100</pubDate>
-      <author>maartenvanvliet@gmail.com (Maarten van Vliet)</author>
-      <guid>/about/</guid>
-      <description>
-
-&lt;h2 id=&#34;a-headline:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;A headline&lt;/h2&gt;
-
-&lt;p&gt;Some Content&lt;/p&gt;
-
-&lt;p&gt;&lt;a rel=&#34;nofollow&#34; href=&#34;http://www.amazon.com/gp/product/1449369995/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1449369995&amp;linkCode=as2&amp;tag=maartenvanvli-20&amp;linkId=U4BLAFXHU5STZNK4&#34;&gt;Introducing Elixir: Getting Started in Functional Programming&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=maartenvanvli-20&amp;l=as2&amp;o=1&amp;a=1449369995&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
