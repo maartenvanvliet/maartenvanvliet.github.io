@@ -8,8 +8,50 @@
     <language>en-us</language>
     <managingEditor>maartenvanvliet@gmail.com (Maarten van Vliet)</managingEditor>
     <webMaster>maartenvanvliet@gmail.com (Maarten van Vliet)</webMaster>
-    <lastBuildDate>Sat, 02 Jan 2016 16:11:43 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 03 Mar 2016 15:34:21 +0100</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Capistrano caches git remotes</title>
+      <link>/2016/03/03/capistrano-caches-git-remotes/</link>
+      <pubDate>Thu, 03 Mar 2016 15:34:21 +0100</pubDate>
+      <author>maartenvanvliet@gmail.com (Maarten van Vliet)</author>
+      <guid>/2016/03/03/capistrano-caches-git-remotes/</guid>
+      <description>&lt;p&gt;Quick explanation on issue I solved for Capistrano&lt;/p&gt;
+
+&lt;p&gt;For a project I changed the &amp;lsquo;origin&amp;rsquo; remote for the git repository. As I use capistrano for deployments I dutifully changed the git repository url in the deploy.rb file.&lt;/p&gt;
+
+&lt;p&gt;After making some changes and deploying them using the new &amp;lsquo;origin&amp;rsquo; remote for the repository the webserver did not pick up on it. It seemed as if capistrano cached the old remote.&lt;/p&gt;
+
+&lt;p&gt;Apparently it did, the &amp;lsquo;repo&amp;rsquo; git repository directory in the application directory contained a reference to the old remote. Removing the directory and deploying again through &amp;lsquo;cap production deploy&amp;rsquo; made capistrano pick up on the changes.&lt;/p&gt;
+
+&lt;p&gt;I could also have gone into the &amp;lsquo;repo&amp;rsquo; directory and changed the remote reference there but this works just as well.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Articles read Jan 2016</title>
+      <link>/2016/01/26/articles-read-jan-2016/</link>
+      <pubDate>Tue, 26 Jan 2016 17:36:49 +0100</pubDate>
+      <author>maartenvanvliet@gmail.com (Maarten van Vliet)</author>
+      <guid>/2016/01/26/articles-read-jan-2016/</guid>
+      <description>
+
+&lt;p&gt;Selection of articles of interest I read in jan 2016.&lt;/p&gt;
+
+&lt;h4 id=&#34;neuroscience&#34;&gt;Neuroscience&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://theneurosphere.com/2015/11/14/is-serotonin-the-happy-brain-chemical-and-do-depressed-people-just-have-too-little-of-it/&#34;&gt;Is Serotonin The Happy Brain Chemical, And Do Depressed People Just Have Too Little Of It?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;wwii&#34;&gt;WWII&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://medium.com/war-is-boring/how-britain-beat-germanys-wwii-magnetic-sea-mines-bfec5558704c#.8hsnvgqlm&#34;&gt;How Britain Beat Germany’s Magnetic Sea Mines&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Books read in 2015</title>
@@ -49,7 +91,7 @@
       <guid>/about/</guid>
       <description>
 
-&lt;h2 id=&#34;software-consultant:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Software Consultant&lt;/h2&gt;
+&lt;h2 id=&#34;software-consultant&#34;&gt;Software Consultant&lt;/h2&gt;
 
 &lt;p&gt;Specialized in Agile development in Ruby. Eloquent in languages such as PHP/Elixir/R/Javascript/Python and others.&lt;/p&gt;
 

@@ -3,8 +3,18 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2016-01-02T16:11:43+01:00</lastmod>
+    <lastmod>2016-03-03T15:34:21+01:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/2016/03/03/capistrano-caches-git-remotes/</loc>
+    <lastmod>2016-03-03T15:34:21+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2016/01/26/articles-read-jan-2016/</loc>
+    <lastmod>2016-01-26T17:36:49+01:00</lastmod>
   </url>
   
   <url>

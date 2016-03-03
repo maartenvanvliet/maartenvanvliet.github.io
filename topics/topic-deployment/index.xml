@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Topic Deployment on Blog</title>
+    <link>/topics/topic-deployment/</link>
+    <description>Recent content in Topic Deployment on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>maartenvanvliet@gmail.com (Maarten van Vliet)</managingEditor>
+    <webMaster>maartenvanvliet@gmail.com (Maarten van Vliet)</webMaster>
+    <lastBuildDate>Thu, 03 Mar 2016 15:34:21 +0100</lastBuildDate>
+    <atom:link href="/topics/topic-deployment/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Capistrano caches git remotes</title>
+      <link>/2016/03/03/capistrano-caches-git-remotes/</link>
+      <pubDate>Thu, 03 Mar 2016 15:34:21 +0100</pubDate>
+      <author>maartenvanvliet@gmail.com (Maarten van Vliet)</author>
+      <guid>/2016/03/03/capistrano-caches-git-remotes/</guid>
+      <description>&lt;p&gt;Quick explanation on issue I solved for Capistrano&lt;/p&gt;
+
+&lt;p&gt;For a project I changed the &amp;lsquo;origin&amp;rsquo; remote for the git repository. As I use capistrano for deployments I dutifully changed the git repository url in the deploy.rb file.&lt;/p&gt;
+
+&lt;p&gt;After making some changes and deploying them using the new &amp;lsquo;origin&amp;rsquo; remote for the repository the webserver did not pick up on it. It seemed as if capistrano cached the old remote.&lt;/p&gt;
+
+&lt;p&gt;Apparently it did, the &amp;lsquo;repo&amp;rsquo; git repository directory in the application directory contained a reference to the old remote. Removing the directory and deploying again through &amp;lsquo;cap production deploy&amp;rsquo; made capistrano pick up on the changes.&lt;/p&gt;
+
+&lt;p&gt;I could also have gone into the &amp;lsquo;repo&amp;rsquo; directory and changed the remote reference there but this works just as well.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

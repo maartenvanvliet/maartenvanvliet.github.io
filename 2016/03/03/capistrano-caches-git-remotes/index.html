@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Blog </title>
+  <title>Capistrano caches git remotes  &middot; Blog</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -17,19 +17,39 @@
 <meta name="keywords" content="">
 
 
-<meta property="og:title" content="Blog ">
+<meta property="og:title" content="Capistrano caches git remotes  &middot; Blog ">
 <meta property="og:site_name" content="Blog"/>
-<meta property="og:url" content="/" />
+<meta property="og:url" content="/2016/03/03/capistrano-caches-git-remotes/" />
 <meta property="og:locale" content="en-us">
 
 
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2016-03-03T15:34:21&#43;01:00" />
+<meta property="og:article:modified_time" content="2016-03-03T15:34:21&#43;01:00" />
+
+  
+
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Capistrano caches git remotes",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2016-03-03",
+    "description": "",
+    "wordCount":  126 
+  }
+</script>
 
 
 
-<link href="/index.xml" rel="alternate" type="application/rss+xml" title="Blog" />
-
-<link rel="canonical" href="/" />
+<link rel="canonical" href="/2016/03/03/capistrano-caches-git-remotes/" />
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
 <link href="/favicon.png" rel="icon">
@@ -122,111 +142,83 @@
 </header>
 
 
-<section id="main-content" class="container main_content homepage">
-  <header class="container header">
-    <h1>Blog
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1>Capistrano caches git remotes
 </h1>
 
-    <span>last update: <time datetime="2016-03-03T15:34:21&#43;01:00">3 March at 3:34pm</time>
-</span>
+  <div class="metas">
+<time datetime="2016-03-03">3 Mar, 2016</time>
 
-  </header>
-  
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="/2016/03/03/capistrano-caches-git-remotes/">Capistrano caches git remotes
-</a>
-</h2>
 
-  <time datetime="2016-03-03">3 Mar, 2016</time>
+  
+  &middot; Read in about 1 min
+  &middot; (126 Words)
+  <br>
+  
+
 
 </div>
 
-  <p class="container content">
-  
-  
-    <p>Quick explanation on issue I solved for Capistrano</p>
+</header>
 
-  
+  <div class="container content">
+  <p>Quick explanation on issue I solved for Capistrano</p>
 
+<p>For a project I changed the &lsquo;origin&rsquo; remote for the git repository. As I use capistrano for deployments I dutifully changed the git repository url in the deploy.rb file.</p>
 
-</p>
+<p>After making some changes and deploying them using the new &lsquo;origin&rsquo; remote for the repository the webserver did not pick up on it. It seemed as if capistrano cached the old remote.</p>
 
+<p>Apparently it did, the &lsquo;repo&rsquo; git repository directory in the application directory contained a reference to the old remote. Removing the directory and deploying again through &lsquo;cap production deploy&rsquo; made capistrano pick up on the changes.</p>
 
-  <div class="container readlink">
-  <a href="/2016/03/03/capistrano-caches-git-remotes/">Read more &rarr;</a>
+<p>I could also have gone into the &lsquo;repo&rsquo; directory and changed the remote reference there but this works just as well.</p>
 
 </div>
 
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="/2016/01/26/articles-read-jan-2016/" title="Articles read Jan 2016">
+      Previous
+    </a>
+    
+
+    
+
+  
+
+
+</div>
+
+  <div class="container comments">
+  <h2>Comments</h2>
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//your_disqus_shortname.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
 
 </article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="/2016/01/26/articles-read-jan-2016/">Articles read Jan 2016
-</a>
-</h2>
-
-  <time datetime="2016-01-26">26 Jan, 2016</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    <p>Selection of articles of interest I read in jan 2016.</p>
-
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="/2016/01/26/articles-read-jan-2016/">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-    <article class="container content summary">
-  <div class="container hat">
-  <h2><a href="/2016/01/02/books-read-in-2015/">Books read in 2015
-</a>
-</h2>
-
-  <time datetime="2016-01-02">2 Jan, 2016</time>
-
-</div>
-
-  <p class="container content">
-  
-  
-    <p>Selection of books I&rsquo;ve read in 2015. It&rsquo;s not complete and I hope to keep better track of it in 2016.</p>
-
-  
-
-
-</p>
-
-
-  <div class="container readlink">
-  <a href="/2016/01/02/books-read-in-2015/">Read more &rarr;</a>
-
-</div>
-
-
-</article>
-
-  
-  
-
-</section>
-
       <footer id="main-footer" class="container main_footer">
   
 
